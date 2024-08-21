@@ -41,14 +41,14 @@ The CPU is designed with a modular approach, where each component is responsible
   </div>
 
 - **PC:** 
-  - Responsible for performing essential arithmetic (addition, subtraction, etc.) and logic (AND, OR, NOT, etc.) operations. The ALU is a critical component in executing instructions and manipulating data within the CPU.
+  - This does...
   
   <div align="center">
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/ProgramCounter/PC%20Simulation1.jpg" alt="Program Counter Results">
   </div>
 
 - **IM:** 
-  - 
+  - This does...
   
   <div align="center">
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/InstructionMemory/InstructionMemory%20Simulation1.jpg" alt="Instruction Memory Results">
