@@ -40,6 +40,20 @@ The CPU is designed with a modular approach, where each component is responsible
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/DataMemory/DataMemory%20Simulation1.jpg" alt="Data Memory Simulation Results">
   </div>
 
+- **PC:** 
+  - Responsible for performing essential arithmetic (addition, subtraction, etc.) and logic (AND, OR, NOT, etc.) operations. The ALU is a critical component in executing instructions and manipulating data within the CPU.
+  
+  <div align="center">
+    <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/ProgramCounter/PC%20Simulation1.jpg" alt="Program Counter Results">
+  </div>
+
+- **IM:** 
+  - 
+  
+  <div align="center">
+    <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/InstructionMemory/InstructionMemory%20Simulation1.jpg" alt="Instruction Memory Results">
+  </div>
+  
 ## Simulations and Testing
 Each component was rigorously tested through simulations to verify functionality and ensure correct operation within the CPU design. The simulation results, as shown above, provide detailed insights into the behavior and performance of individual components.
 
