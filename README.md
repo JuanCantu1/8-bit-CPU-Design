@@ -1,7 +1,7 @@
 # 8-bit CPU Design
 
 ## Overview
-This project demonstrates the design and implementation of a simple 8-bit CPU using Verilog. The CPU architecture is composed of key components including an Arithmetic Logic Unit (ALU), Control Unit, Register File, and Data Memory. This project is an educational tool designed to provide insights into the fundamental operations and structure of a CPU.
+This project showcases the design and implementation of a simple 8-bit CPU using Verilog. The CPU architecture is modular, with key components such as the Arithmetic Logic Unit (ALU), Control Unit, Register File, and Data Memory working together to perform basic arithmetic, logic, and control operations. This project serves as an educational tool for understanding the fundamental operations and structure of a CPU.
 
 ## Architecture
 The CPU is designed with a modular approach, where each component is responsible for specific tasks that collectively enable the CPU to perform basic arithmetic, logic, and control operations. The following diagram provides a high-level overview of the CPU's architecture:
@@ -40,22 +40,22 @@ The CPU is designed with a modular approach, where each component is responsible
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/DataMemory/DataMemory%20Simulation1.jpg" alt="Data Memory Simulation Results">
   </div>
 
-- **PC:** 
-  - This does...
+- **Program Counter (PC):** 
+  - The Program Counter keeps track of the address of the next instruction to be executed. It increments automatically or jumps to a specific address during branch instructions.
   
   <div align="center">
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/ProgramCounter/PC%20Simulation1.jpg" alt="Program Counter Results">
   </div>
 
-- **IM:** 
-  - This does...
+- **IInstruction Memory (IM):** 
+  - Instruction Memory stores the instructions to be executed by the CPU. The Control Unit fetches instructions from this memory based on the Program Counter's value.
   
   <div align="center">
     <img src="https://github.com/JuanCantu1/8-bit-CPU-Design/blob/main/CPU%20Design/InstructionMemory/InstructionMemory%20Simulation1.jpg" alt="Instruction Memory Results">
   </div>
   
 ## Simulations and Testing
-Each component was rigorously tested through simulations to verify functionality and ensure correct operation within the CPU design. The simulation results, as shown above, provide detailed insights into the behavior and performance of individual components.
+Each component was thoroughly tested through simulations to verify its functionality and ensure correct integration within the CPU design. The simulation results presented above illustrate the behavior and performance of the individual components.
 
 ## Conclusion
-This 8-bit CPU design project offers a comprehensive exploration of CPU architecture, serving as a practical example for those interested in digital system design and computer architecture. The project showcases the integration of various components into a cohesive system capable of executing basic instructions.
+This 8-bit CPU design project offers a practical exploration of CPU architecture, making it a valuable resource for those interested in digital system design and computer architecture. The project demonstrates how various components are integrated into a functioning CPU capable of executing basic instructions.
