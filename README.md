@@ -93,15 +93,7 @@ as it's computed, replayed at a human-watchable pace on a loop until you
 press Ctrl+C — a live look at real code executing on the core rather
 than a pass/fail log.
 
-> **Add your video here.** GitHub renders a video inline if you drag
-> and drop the file directly into the README editor on github.com (the
-> same way the screenshots above get uploaded) — it generates a playable
-> `user-attachments` link automatically, no markdown video tag needed.
-> If you'd rather keep everything local instead of relying on the GitHub
-> editor, convert the clip to a `.gif` (e.g. with ffmpeg or any online
-> converter) and embed it as a normal image, the same way the
-> screenshots above work — GIFs autoplay everywhere but lose playback
-> controls and tend to be a larger file.
+<video src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/Fibonacci_Demo.mp4" controls width="600"></video>
 
 ---
 
@@ -115,27 +107,27 @@ than a pass/fail log.
 
 **Full 5-stage pipeline — hazard & forwarding integration tests**
 <p align="center">
-  <img src="docs/screenshots/pipelined_core_test.png" alt="Pipelined core test results" width="700">
+  <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/pipelined_core_test.png" alt="Pipelined core test results" width="700">
 </p>
 
 **63-instruction program run on both cores — dual-core equivalence + measured cycle counts**
 <p align="center">
-  <img src="docs/screenshots/full_program_test.png" alt="Full program integration test results" width="700">
+  <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/full_program_test.png" alt="Full program integration test results" width="700">
 </p>
 
 **Compliance-style edge case testing — classic RV32I corner cases**
 <p align="center">
-  <img src="docs/screenshots/compliance_test.png" alt="Compliance-style test results" width="700">
+  <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/compliance_test.png" alt="Compliance-style test results" width="700">
 </p>
 
 **Functional coverage report — 100% across 39 tracked bins**
 <p align="center">
-  <img src="docs/screenshots/coverage_report.png" alt="Functional coverage report" width="700">
+  <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/coverage_report.png" alt="Functional coverage report" width="700">
 </p>
 
 **Constrained-random testing — 300 randomized programs vs. reference model**
 <p align="center">
-  <img src="docs/screenshots/random_test.png" alt="Constrained-random test results" width="700">
+  <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/random_test.png" alt="Constrained-random test results" width="700">
 </p>
 
 ---
