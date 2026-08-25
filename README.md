@@ -99,12 +99,6 @@ than a pass/fail log.
 
 ## 📸 Results Showcase
 
-> The images below are placeholders. Run each command from `sim/`, save
-> a screenshot of the terminal output using the filename shown, and
-> drop it into `docs/screenshots/` — see `docs/screenshots/README.md`
-> for exact capture instructions. Once the file exists at that path, it
-> renders automatically.
-
 **Full 5-stage pipeline — hazard & forwarding integration tests**
 <p align="center">
   <img src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/pipelined_core_test.png" alt="Pipelined core test results" width="700">
