@@ -93,7 +93,7 @@ as it's computed, replayed at a human-watchable pace on a loop until you
 press Ctrl+C — a live look at real code executing on the core rather
 than a pass/fail log.
 
-<video src="https://github.com/JuanCantu1/CPU-Design/blob/main/32-Bit-RISC-V/docs/demos/Fibonacci_Demo.mp4" controls width="600"></video>
+<video src="https://github.com/user-attachments/assets/45ddcba1-58b6-4a33-ab35-b7f494232a5e" controls width="600"></video>
 
 ---
 
