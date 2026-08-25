@@ -4,24 +4,21 @@
 - ISA: RV32I base only for v1. M extension is a phase-2 stretch goal.
 - Target: 5-stage pipeline (IF/ID/EX/MEM/WB), 3-5x throughput over a
   single-cycle baseline.
-- Project priorities shifted partway through: the user is targeting
-  front-end RTL design/verification roles, not backend/implementation —
-  FPGA synthesis and Fmax are lower priority as a result (still on the
-  roadmap, just not urgent), and simulation-based verification
-  methodology (SVA, functional coverage, constrained-random testing) is
-  the higher-value direction to keep investing in for the rest of this
-  project.
-- Real riscv-tests/riscv-arch-test upstream compliance is deliberately
-  on hold for the same reason, plus one more: this is a custom core, not
-  one that needs to satisfy strict upstream compliance to be a
-  legitimate portfolio piece. The explicit goal for the remainder of
-  this project was a coherent stopping point that feels like a complete,
-  polished verification story rather than working through every
-  conceivable roadmap addition — constrained-random testing against the
-  single-cycle reference (done, see "Constrained-random instruction
-  testing" below) was the last planned item before that stop. FPGA
-  synthesis and real upstream compliance stay on the roadmap as
-  deliberately-deferred stretch goals, not abandoned ones.
+- Priorities shifted partway through in favor of simulation-based
+  verification methodology (SVA, functional coverage, constrained-random
+  testing) over backend/implementation work. FPGA synthesis and Fmax
+  comparison stay on the roadmap but are lower priority, not urgent.
+- Real riscv-tests/riscv-arch-test upstream compliance is on hold for
+  the same reason, plus one more: this is a custom core, not one that
+  needs to satisfy strict upstream compliance to be complete. The goal
+  for the remainder of the project was a coherent stopping point that
+  reads as a complete, polished verification story rather than working
+  through every conceivable roadmap addition — constrained-random
+  testing against the single-cycle reference (done, see
+  "Constrained-random instruction testing" below) was the last planned
+  item before that stop. FPGA synthesis and real upstream compliance
+  stay on the roadmap as deliberately-deferred stretch goals, not
+  abandoned ones.
 
 ## Hazard strategy
 - Build stall-only interlocking first (simple, correct, slow) — done.
@@ -364,9 +361,9 @@
   adding real CSR/trap RTL, building an ELF/hex program-loading path
   (every testbench so far pokes instructions directly via a hierarchical
   reference — there's no loader), and a signature/tohost pass-fail
-  mechanism. Flagged to the user as a genuine multi-part undertaking
-  rather than started unprompted; the user chose the scoped-down
-  alternative below instead of the full toolchain path.
+  mechanism — a genuine multi-part undertaking. Scoped down to the
+  hand-ported alternative below instead, leaving the full toolchain path
+  as a separate, deliberately deferred phase.
 - What was built instead: tb_compliance.sv hand-ports the classic RV32I
   edge cases riscv-tests' rv32ui suite is built around, encoded with the
   same enc_* helpers used everywhere else in this project — no new
@@ -470,9 +467,9 @@
   `id_ex_q.valid` against it the cycle after. This pattern — capture a
   signal via a plain register, check the CONSEQUENCE against it one
   cycle later inside a normal `always_ff` — turns out to be exactly how
-  regfile.sv's x0-storage-stability check already worked (built earlier
-  in this same session), so it wasn't a new technique so much as
-  recognizing the same one applied to a second problem.
+  regfile.sv's x0-storage-stability check already works, so it wasn't a
+  new technique so much as recognizing the same one applied to a second
+  problem.
 - Two real bugs surfaced in the assertions themselves before they were
   trustworthy — both caught by running the full regression immediately
   after adding them, rather than assuming clean logic meant clean
